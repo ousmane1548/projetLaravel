@@ -22,9 +22,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     /* cette fonction permet d'afficher tout le contenu de la table etudiants*/
     public function index()
     {
         $etudiants = Etudiant::all();
-        return view('home', compact('$etudiants'));
+        return view('home', compact('etudiants'));
     }
 }
